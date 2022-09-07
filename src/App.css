@@ -1,0 +1,163 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.avatar{
+    border-radius: 50%;
+    object-fit: cover;
+}
+.loading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.user-infos {
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  /* // border-bottom: solid 1px #dedede; */
+}
+.user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.infos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.info {
+  font-size: 14px;
+  margin-right: 15px;
+  color: #999797;
+  display: flex;
+  align-items: center;
+}
+.nav-tabs,
+.nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+  font-weight: bold;
+  color: #000;
+}
+.nav-link {
+  font-size: 14px;
+  color: #586069;
+}
+.repositories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+i {
+  color: #6a6c6eb7;
+}
+.repo {
+  width: 45%;
+  border: solid 1px #ccc;
+  background-color: rgb(235, 235, 235);
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.5s ease-in;
+}
+
+.repo:hover {
+  transform: scale(1.1, 1.1);
+  filter: invert(1);
+}
+
+.title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  line-height: 1.5rem;
+  max-height: 1.5rem;
+}
+.title > span {
+  color: #0366d6;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.description {
+  font-size: 14px;
+  color: rgb(90, 89, 89);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-height: 1.5rem;
+  max-height: 3rem;
+}
+.subitem {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.dashDetails {
+  display: flex;
+  background: lightgray;
+}
+.dashAvatar{
+  border: 3px solid gray;
+}
+.col {
+  align-self: center;
+}
+.dashBottom {
+      display: flex;
+    justify-content: space-around;
+}
+.dashCount, .dashIssues {
+  border: 3px solid gray;
+}
